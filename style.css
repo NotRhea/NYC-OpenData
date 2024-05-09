@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  max-width: 1200px;
+
+  
+}
+
+.title {
+  
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7em;
+  color: antiquewhite;
+  padding-left: 1em;
+  padding-top: 1.5;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: antiquewhite;
+  padding-left: 4em;
+}
+.mark {color: red;
+padding-left: 15em;}
+
+
+.tagline { color: #fff;
+  padding-left: 30em;
+  padding-top: 50px;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the container */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.filters {
+  padding-top: 10px;
+  padding-left: 60vw;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 8px;
+  color: #fffdfd;
+  font-size: 16px;
+  border: 1px solid #fffdfd;
+  font-family: "Jersey 25", sans-serif;
+  border-radius: 5px;
+  background-color: #000000;
+  /* Add any other styles you want */
+}
+
+select:hover {
+  border-color: #aaa;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff; /* Change to desired focus color */
+}
+
+select option {
+  background-color: rgb(68, 25, 25);
+  color: rgb(225, 225, 225);
+}
+
+option {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Style for the dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Style for the dropdown arrow in Chrome and Firefox */
+select::-webkit-select {
+  appearance: none;
+  padding-right: 25px; /* Adjust as needed */
+  background-image: url('https://pngimg.com/d/bone_PNG30.png'); /* Change to the path of your arrow image */
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.pagination {
+  margin-bottom: 20px;
+  padding-left: 2em;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-auto-rows: 1fr; /* Five rows */
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-image {
+  width: 250px; /* Adjust width as needed */
+  height: 250px; /* Adjust height as needed */
+  object-fit: cover;
+  padding-left: 1.5em;
+}
+
+.item-info {
+  display: none;
+  position: absolute;
+  top: 0;
+ 
+  left: calc(100% + 20px); 
+  padding: 10px;
+  color: #fff;
+  background-color: #000000;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  border: solid #fff;
+  border-radius: 30px;
+}
+
+.item:hover .item-info {
+  display: block;
+}
+
+#ouchMessage {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  opacity: 1;
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.item-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.culprit-window {
+  position: fixed;
+  top: calc(100px + 40px); /* Height of title + margin-top of filters */
+  right: 20px;
+  width: 300px;
+  background-color: black;
+  border: 1px solid #ccc;
+  padding: 20px;
+  padding-top: 40px;
+  display: none;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#culprit-title {font: 1em ;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: red;
+}
+
+.culprit-content {
+    text-align: center;
+  color: white 
+}
+
+.culprit-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}

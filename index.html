@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Image Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">CHOMP!!NYC </div>
+    <div class="subtitle">
+      A dataset of dog bites reported in manhattan and brooklyn in the year 2022</div>
+    <div class="filters">
+        <select id="breedFilter">
+            <option value="">All Breeds</option>
+        </select>
+        <select id="boroughFilter">
+            <option value="">All Boroughs</option>
+        </select>
+        <select id="genderFilter">
+            <option value="">All Genders</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+    </div>
+    <div class="tagline">Click On The Torn Up Toys To Find Out About The Culprit!</div>
+    <div class="container" id="container"></div>
+
+    <div class="mark"><marquee behavior="" direction="UP">OUCH OUCH OUCH OUCH OUCH OUCH OUCH OUCH OUCH OUCH OUCH OUCH OUCH OUCH OUCH OUCH</marquee></div>
+    <div class="pagination">
+        <button id="prevPage">Previous Page</button>
+        <button id="nextPage">Next Page</button>
+    </div>
+
+    <!-- Fixed container for culprit information -->
+    <div id="culpritWindow" class="culprit-window">
+        <div id="culpritContent" class="culprit-content">
+            <h2 id="culpritTitle">THE CULPRIT</h2>
+            <img id="culpritImage" class="culprit-image" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fwp-content%2Fuploads%2F20221201183502%2FEnableliveserver3.jpg&tbnid=qEZU7dTKsLuZ2M&vet=12ahUKEwi5mK-xkYGGAxXxN94AHbKJDdwQMygBegQIARBX..i&imgrefurl=https%3A%2F%2Fwww.geeksforgeeks.org%2Fhow-to-enable-live-server-on-visual-studio-code%2F&docid=PKhOZsTHrHwbdM&w=1000&h=562&q=how%20to%20go%20live%20in%20vscode%3F&client=safari&ved=2ahUKEwi5mK-xkYGGAxXxN94AHbKJDdwQMygBegQIARBX" alt="Culprit Image">
+            <div id="culpritDescription" class="culprit-description"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
